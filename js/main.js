@@ -145,7 +145,7 @@ function Login() {
       users[i].password.toLowerCase() == loginPassword.value.toLowerCase()
     ) {
       localStorage.setItem("usersSession", users[i].name);
-      loginBtn.setAttribute("href", "welcome.html");
+      loginBtn.setAttribute("href", "pages/welcome.html");
     } else {
       wrongMsg.classList.remove("d-none");
     }
